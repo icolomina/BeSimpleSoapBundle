@@ -16,7 +16,7 @@ use BeSimple\SoapBundle\ServiceDefinition\Annotation;
 use Doctrine\Common\Annotations\Reader;
 
 use Symfony\Component\Config\Loader\LoaderInterface;
-use Symfony\Component\Config\Loader\LoaderResolverInterface;
+use Symfony\Component\Config\Loader\LoaderResolver;
 
 /**
  * AnnotationClassLoader loads ServiceDefinition from a PHP class and its methods.
@@ -185,7 +185,7 @@ class AnnotationClassLoader implements LoaderInterface
      *
      * @param LoaderResolverInterface $resolver A LoaderResolverInterface instance
      */
-    public function setResolver(LoaderResolverInterface $resolver)
+    public function setResolver(LoaderResolver $resolver)
     {
     }
 
